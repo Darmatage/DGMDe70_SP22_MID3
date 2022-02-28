@@ -60,7 +60,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
        else if (primeInt ==3){
                 Char1name.text = "Mouse";
-                Char1speech.text = "I can also smell milk in the fridge";
+                Char1speech.text = "I can also smell milk in the fridge.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
@@ -84,21 +84,21 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-      // else if (primeInt ==7){
-      //          Char1name.text = "";
-      //          Char1speech.text = "";
-      //          Char2name.text = "";
-      //          Char2speech.text = "";
-      //  }
+       else if (primeInt ==7){
+                Char1name.text = "Mouse";
+                Char1speech.text = "Should I go to the pantry, or get cake first?";
+                Char2name.text = "";
+				Char2speech.text = "";
+        }
        else if (primeInt == 8){
-          //     Char1name.text = "";
-          //    Char1speech.text = "";
-       //         Char2name.text = "";
-        //        Char2speech.text = "";
+              Char1name.text = "Mouse";
+             // Char1speech.text = "";
+             //   Char2name.text = "";
+              // Char2speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons
-               // nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
+                nextButton.SetActive(false);
+               // allowSpace = false;
+				Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
         }
 // ENCOUNTER AFTER CHOICE #1
