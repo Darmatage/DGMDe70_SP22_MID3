@@ -241,7 +241,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 40581311}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c328248e4ec4f2e41acd8211f2ef9235, type: 3}
+  m_Script: {fileID: 11500000, guid: eaf702c8d2d6b4439805dfd2dd0713b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
@@ -249,15 +249,13 @@ MonoBehaviour:
   Char1speech: {fileID: 511422061}
   Char2name: {fileID: 1439079377}
   Char2speech: {fileID: 1078600154}
-  Char3name: {fileID: 0}
-  Char3speech: {fileID: 0}
   DialogueDisplay: {fileID: 938030552}
   ArtChar1: {fileID: 427031748}
   ArtBG1: {fileID: 0}
-  Choice1a: {fileID: 704988994}
+  Choice1a: {fileID: 1615891987}
   Choice1b: {fileID: 1766229815}
   NextScene1Button: {fileID: 1568421465}
-  NextScene2Button: {fileID: 749365997}
+  NextScene2Button: {fileID: 0}
   nextButton: {fileID: 1411531041}
 --- !u!1 &174167826
 GameObject:
@@ -562,7 +560,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You Speech
+  m_Text: 
 --- !u!222 &511422062
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -740,21 +738,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c328248e4ec4f2e41acd8211f2ef9235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  primeInt: 1
-  Char1name: {fileID: 0}
-  Char1speech: {fileID: 0}
-  Char2name: {fileID: 0}
-  Char2speech: {fileID: 0}
-  Char3name: {fileID: 0}
-  Char3speech: {fileID: 0}
-  DialogueDisplay: {fileID: 0}
-  ArtChar1: {fileID: 0}
-  ArtBG1: {fileID: 0}
-  Choice1a: {fileID: 0}
-  Choice1b: {fileID: 0}
-  NextScene1Button: {fileID: 0}
-  NextScene2Button: {fileID: 0}
-  nextButton: {fileID: 0}
 --- !u!1 &704988994
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,7 +756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &704988995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,7 +801,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 40581316}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Scene1Dialogue, Assembly-CSharp
         m_MethodName: Choice1aFunct
         m_Mode: 1
@@ -1313,7 +1296,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sally Speech
+  m_Text: 
 --- !u!222 &1078600155
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1464,13 +1447,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 40581316}
+        m_TargetAssemblyTypeName: Scene1Conversation, Assembly-CSharp
+        m_MethodName: talking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1604,7 +1587,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Sally
+  m_Text: '
 
 '
 --- !u!222 &1439079378
@@ -1678,13 +1661,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 40581316}
+        m_TargetAssemblyTypeName: Scene1Conversation, Assembly-CSharp
+        m_MethodName: SceneChange1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1766,7 +1749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1615891988
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1831,13 +1814,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 40581316}
+        m_TargetAssemblyTypeName: Scene1Conversation, Assembly-CSharp
+        m_MethodName: Choice1aFunct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1978,7 +1961,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1766229816
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2043,13 +2026,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 40581316}
+        m_TargetAssemblyTypeName: Scene1Conversation, Assembly-CSharp
+        m_MethodName: Choice1bFunct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2163,7 +2146,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'YOU
+  m_Text: '
 
 '
 --- !u!222 &1773313603
@@ -2264,7 +2247,6 @@ GameObject:
   - component: {fileID: 1963435178}
   - component: {fileID: 1963435180}
   - component: {fileID: 1963435179}
-  - component: {fileID: 1963435181}
   m_Layer: 5
   m_Name: ImageName
   m_TagString: Untagged
@@ -2331,33 +2313,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963435177}
   m_CullTransparentMesh: 1
---- !u!114 &1963435181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963435177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c328248e4ec4f2e41acd8211f2ef9235, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  primeInt: 1
-  Char1name: {fileID: 1773313602}
-  Char1speech: {fileID: 511422061}
-  Char2name: {fileID: 0}
-  Char2speech: {fileID: 0}
-  Char3name: {fileID: 0}
-  Char3speech: {fileID: 0}
-  DialogueDisplay: {fileID: 0}
-  ArtChar1: {fileID: 0}
-  ArtBG1: {fileID: 0}
-  Choice1a: {fileID: 0}
-  Choice1b: {fileID: 0}
-  NextScene1Button: {fileID: 0}
-  NextScene2Button: {fileID: 0}
-  nextButton: {fileID: 0}
 --- !u!1 &1982813915
 GameObject:
   m_ObjectHideFlags: 0
