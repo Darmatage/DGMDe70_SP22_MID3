@@ -15,7 +15,7 @@ public class Scene2Dialogue : MonoBehaviour {
        // public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
-		// public GameObject ArtChar2;
+		 public GameObject smilingmouse;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -31,6 +31,7 @@ void Start(){         // initial visibility settings
         Choice1b.SetActive(false);
 		nextButton.SetActive(true);
 		ArtChar1.SetActive(false);
+		smilingmouse.SetActive(false);
 		ButtonScene3a.SetActive(false);
         ButtonScene3b.SetActive(false);
 		
@@ -135,27 +136,29 @@ public void talking(){         // main story function. Players hit next to progr
                Char2speech.text = "";
        }
       else if (primeInt == 102){
-               ArtChar1.SetActive(true);
+               smilingmouse.SetActive(true);
 			   Char1name.text = "";
                Char1speech.text = "";
                Char2name.text = "Sally";
                Char2speech.text = "Sniff...sniff...";
 	  }
 	  else if (primeInt == 103){
-               Char1name.text = "YOU";
+               smilingmouse.SetActive(false);
+			   Char1name.text = "YOU";
                Char1speech.text = "NOW what is it, Sally?";
                Char2name.text = "";
                Char2speech.text = "";
 	  }
 	  else if (primeInt == 104){
-               ArtChar1.SetActive(true);
+               smilingmouse.SetActive(true);
 			   Char1name.text = "";
                Char1speech.text = "";
                Char2name.text = "Sally";
                Char2speech.text = "I know that sweeeet smell anywhere...";
 	  }
 	  else if (primeInt == 105){
-               Char1name.text = "YOU";
+               smilingmouse.SetActive(false);
+			   Char1name.text = "YOU";
                Char1speech.text = "Sniff..sniff...is that...";
                Char2name.text = "";
                Char2speech.text = "";
@@ -168,7 +171,8 @@ public void talking(){         // main story function. Players hit next to progr
                Char2speech.text = "STRAWBERRY SHORTACKE!";
 	  }
 	  else if (primeInt == 107){
-               Char1name.text = "YOU";
+               ArtChar1.SetActive(false);
+			   Char1name.text = "YOU";
                Char1speech.text = "I still think we should head to the PANTRY instead.";
                Char2name.text = "";
                Char2speech.text = "";
@@ -201,7 +205,7 @@ public void talking(){         // main story function. Players hit next to progr
                Char2speech.text = "";
        }
 	    else if (primeInt == 202){
-               ArtChar1.SetActive(true);
+               smilingmouse.SetActive(true);
 			   Char1name.text = "";
               Char1speech.text = "";
                Char2name.text = "Sally";
@@ -221,7 +225,9 @@ public void talking(){         // main story function. Players hit next to progr
 
 //FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
        public void Choice1aFunct(){
-               Char1name.text = "YOU";
+               smilingmouse.SetActive(false);
+			   ArtChar1.SetActive(false);
+			   Char1name.text = "YOU";
                Char1speech.text = "Sally, stay focused!";
                Char2name.text = "";
                Char2speech.text = "";
@@ -232,7 +238,9 @@ public void talking(){         // main story function. Players hit next to progr
                allowSpace = true;
        }
        public void Choice1bFunct(){
-               Char1name.text = "YOU";
+               smilingmouse.SetActive(false);
+			   ArtChar1.SetActive(false);
+			   Char1name.text = "YOU";
                Char1speech.text = "Why can't we just get to the PANTRY?";
                Char2name.text = "";
                Char2speech.text = "";
