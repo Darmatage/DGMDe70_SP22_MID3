@@ -250,7 +250,7 @@ MonoBehaviour:
   Char2name: {fileID: 1439079377}
   Char2speech: {fileID: 1078600154}
   DialogueDisplay: {fileID: 938030552}
-  ArtChar1: {fileID: 427031748}
+  ArtChar1: {fileID: 174167826}
   ArtBG1: {fileID: 0}
   Choice1a: {fileID: 1615891987}
   Choice1b: {fileID: 1766229815}
@@ -291,7 +291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2, y: 0}
   m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &174167828
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9c3002223737041bc9b8cffdfd82b1bd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -449,7 +449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 305.957, y: -26}
+  m_AnchoredPosition: {x: 330, y: -6}
   m_SizeDelta: {x: 1246.616, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427031750
