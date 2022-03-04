@@ -16,7 +16,7 @@ public class Scene1Conversation : MonoBehaviour
     //public Text Char3speech;
     public GameObject DialogueDisplay;
     public GameObject ArtChar1;
-    //public GameObject ArtChar2;
+    public GameObject SallyHalfAwake;
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -30,6 +30,7 @@ public class Scene1Conversation : MonoBehaviour
     void Start()
     {         // initial visibility settings
         ArtChar1.SetActive(false);
+		SallyHalfAwake.SetActive(false);
 		DialogueDisplay.SetActive(false);
 		Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -65,7 +66,7 @@ public class Scene1Conversation : MonoBehaviour
         }
         else if (primeInt == 2)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
             DialogueDisplay.SetActive(true);
             Char1name.text = "YOU";
             Char1speech.text = "Wakey wakey, Sally";
@@ -74,7 +75,8 @@ public class Scene1Conversation : MonoBehaviour
         }
         else if (primeInt == 3)
         {
-            Char1name.text = "";
+            SallyHalfAwake.SetActive(true);
+			Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
             Char2speech.text = "Wuh..? What happened?";
@@ -89,7 +91,9 @@ public class Scene1Conversation : MonoBehaviour
         }
         else if (primeInt == 5)
         {
-            Char1name.text = "";
+            SallyHalfAwake.SetActive(false);
+			ArtChar1.SetActive(true);
+			Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
             Char2speech.text = "That is creepy!!!";
