@@ -21,7 +21,7 @@ public class Scene1Conversation : MonoBehaviour
     public GameObject Choice1a;
     public GameObject Choice1b;
     public GameObject NextScene1Button;
-    public GameObject NextScene2Button;
+    //public GameObject NextScene2Button;
     public GameObject nextButton;
     //public GameHandler gameHandler;
     //public AudioSource audioSource;
@@ -34,7 +34,7 @@ public class Scene1Conversation : MonoBehaviour
 		Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
-        NextScene2Button.SetActive(false);
+        //NextScene2Button.SetActive(false);
 		
 		ArtBG1.SetActive(true);
         nextButton.SetActive(true);

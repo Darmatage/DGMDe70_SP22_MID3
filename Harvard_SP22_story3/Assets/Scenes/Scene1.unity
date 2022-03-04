@@ -250,12 +250,11 @@ MonoBehaviour:
   Char2name: {fileID: 1439079377}
   Char2speech: {fileID: 1078600154}
   DialogueDisplay: {fileID: 938030552}
-  ArtChar1: {fileID: 174167826}
-  ArtBG1: {fileID: 0}
+  ArtChar1: {fileID: 427031748}
+  ArtBG1: {fileID: 174167826}
   Choice1a: {fileID: 1615891987}
   Choice1b: {fileID: 1766229815}
   NextScene1Button: {fileID: 1568421465}
-  NextScene2Button: {fileID: 0}
   nextButton: {fileID: 1411531041}
 --- !u!1 &174167826
 GameObject:

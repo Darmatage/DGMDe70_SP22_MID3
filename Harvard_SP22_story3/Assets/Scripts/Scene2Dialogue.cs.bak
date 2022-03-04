@@ -171,7 +171,8 @@ public void talking(){         // main story function. Players hit next to progr
                Char2speech.text = "STRAWBERRY SHORTACKE!";
 	  }
 	  else if (primeInt == 107){
-               Char1name.text = "YOU";
+               ArtChar1.SetActive(false);
+			   Char1name.text = "YOU";
                Char1speech.text = "I still think we should head to the PANTRY instead.";
                Char2name.text = "";
                Char2speech.text = "";
@@ -185,32 +186,67 @@ public void talking(){         // main story function. Players hit next to progr
 	           ButtonScene3b.SetActive(true);
                nextButton.SetActive(false);
                allowSpace = false;
-               
+               DialogueDisplay.SetActive(false);
        }
 
       else if (primeInt == 200){
+               smilingmouse.SetActive(true);
+			   Char1name.text = "";
+               Char1speech.text = "";
+               Char2name.text = "Sally";
+               Char2speech.text = "Sniff...sniff...";
+	  }
+	  else if (primeInt == 201){
+               smilingmouse.SetActive(false);
+			   Char1name.text = "YOU";
+               Char1speech.text = "NOW what is it, Sally?";
+               Char2name.text = "";
+               Char2speech.text = "";
+	  }
+	  else if (primeInt == 202){
+               smilingmouse.SetActive(true);
+			   Char1name.text = "";
+               Char1speech.text = "";
+               Char2name.text = "Sally";
+               Char2speech.text = "I know that sweeeet smell anywhere...";
+	  }
+	  else if (primeInt == 203){
+               smilingmouse.SetActive(false);
+			   Char1name.text = "YOU";
+               Char1speech.text = "Sniff..sniff...is that...";
+               Char2name.text = "";
+               Char2speech.text = "";
+	  }
+	  else if (primeInt == 204){
+               ArtChar1.SetActive(true);
+			   Char1name.text = "";
+               Char1speech.text = "";
+               Char2name.text = "YOU and Sally";
+               Char2speech.text = "STRAWBERRY SHORTACKE!";
+	  }
+	  else if (primeInt == 205){
               ArtChar1.SetActive(true);
 			  Char1name.text = "";
               Char1speech.text = "";
                Char2name.text = "Sally";
-               Char2speech.text = "Well, why can't we get some cake while we are at the PANTRY?";
+               Char2speech.text = "Well, why can't we get some cake then head to the PANTRY?";
        }
 	   
-	         else if (primeInt == 201){
+	         else if (primeInt == 206){
                ArtChar1.SetActive(false);
 			   Char1name.text = "YOU";
               Char1speech.text = "I don't know...I have a bad feeling about it...";
                Char2name.text = "";
                Char2speech.text = "";
        }
-	    else if (primeInt == 202){
+	    else if (primeInt == 207){
                smilingmouse.SetActive(true);
 			   Char1name.text = "";
               Char1speech.text = "";
                Char2name.text = "Sally";
                Char2speech.text = "Just imagine...the cake melts in your mouth...with the first sip of some warm latte";
        }
-      else if (primeInt == 203){
+      else if (primeInt == 208){
                Char1name.text = "YOU";
                Char1speech.text = "Hmmm...";
               Char2name.text = "";
