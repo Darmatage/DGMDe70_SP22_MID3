@@ -16,6 +16,7 @@ public class Scene2Dialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
 		 public GameObject smilingmouse;
+		 public GameObject mouseback;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -32,6 +33,7 @@ void Start(){         // initial visibility settings
 		nextButton.SetActive(true);
 		ArtChar1.SetActive(false);
 		smilingmouse.SetActive(false);
+		mouseback.SetActive(false);
 		ButtonScene3a.SetActive(false);
         ButtonScene3b.SetActive(false);
 		
@@ -65,7 +67,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
-                ArtChar1.SetActive(true);
+                mouseback.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "MOUSE";
@@ -255,6 +257,7 @@ public void talking(){         // main story function. Players hit next to progr
                allowSpace = false;
               ButtonScene3a.SetActive(true);
 			ButtonScene3b.SetActive(true);
+			DialogueDisplay.SetActive(false);
         }
      }
 
