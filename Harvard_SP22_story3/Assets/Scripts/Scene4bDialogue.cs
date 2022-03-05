@@ -373,7 +373,7 @@ public void talking(){         // main story function. Players hit next to progr
        }
 
         public void SceneChange1(){
-			    SceneManager.LoadScene("SceneEnd1");
+			    SceneManager.LoadScene("EndScene1");
 				nextButton.SetActive(false);
 				allowSpace=false;
         }
