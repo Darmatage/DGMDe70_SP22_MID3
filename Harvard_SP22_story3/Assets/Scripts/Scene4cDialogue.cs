@@ -287,7 +287,10 @@ public class Scene4cDialogue : MonoBehaviour
             allowSpace = false;
             NextScene1Button.SetActive(true);
         }
-        //ENCOUNTER AFTER CHOICE #2
+
+        //Debug.Log("prime int " + primeInt);
+        
+       //ENCOUNTER AFTER CHOICE #2
         else if (primeInt == 200)
         {
             Char1name.text = "You";
@@ -336,7 +339,7 @@ public class Scene4cDialogue : MonoBehaviour
             Char2speech.text = "Grrr, fine. ";
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene1Button.SetActive(true);
+            NextScene2Button.SetActive(true);
         }
     }
 
@@ -352,6 +355,8 @@ public class Scene4cDialogue : MonoBehaviour
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
+
+        //Debug.Log("Choice1aFunct got called!");
     }
     public void Choice1bFunct()
     {
@@ -364,11 +369,12 @@ public class Scene4cDialogue : MonoBehaviour
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
+        //Debug.Log("Choice1bFunct got called!");
     }
 
     public void SceneChange1()
     {
-        //SceneManager.LoadScene("SceneEnd2");
+        SceneManager.LoadScene("EndScene2");
     }
     public void SceneChange2()
     {

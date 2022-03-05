@@ -2092,7 +2092,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 40581317}
         m_TargetAssemblyTypeName: Scene4cDialogue, Assembly-CSharp
-        m_MethodName: SceneChange2
+        m_MethodName: Choice1bFunct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
