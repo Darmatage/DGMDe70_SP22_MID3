@@ -23,7 +23,7 @@ public class Scene2Dialogue : MonoBehaviour {
         public GameObject ButtonScene3a;
         public GameObject ButtonScene3b;
         public GameObject nextButton;
-       public GameHandler gameHandler;
+       //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
@@ -193,6 +193,7 @@ public void talking(){         // main story function. Players hit next to progr
        }
 
       else if (primeInt == 200){
+		  mouseback.SetActive(false);
                smilingmouse.SetActive(true);
 			   Char1name.text = "";
                Char1speech.text = "";

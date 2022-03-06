@@ -333,7 +333,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go to cheese under table
+  m_Text: Go to CHEESE
 --- !u!222 &123740695
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2173,8 +2173,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Scene2Dialogue, Assembly-CSharp
+      - m_Target: {fileID: 40581316}
+        m_TargetAssemblyTypeName: Scene3bDialogue, Assembly-CSharp
         m_MethodName: SceneChange2
         m_Mode: 1
         m_Arguments:
@@ -2528,7 +2528,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go to CAKE on TABLE
+  m_Text: Go to CAKE
 --- !u!222 &2124099419
 CanvasRenderer:
   m_ObjectHideFlags: 0

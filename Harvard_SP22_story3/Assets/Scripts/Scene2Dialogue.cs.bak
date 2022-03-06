@@ -124,7 +124,8 @@ public void talking(){         // main story function. Players hit next to progr
 		
 // ENCOUNTER AFTER CHOICE #1
       else if (primeInt == 100){
-               ArtChar1.SetActive(true);
+               mouseback.SetActive(false);
+			   ArtChar1.SetActive(true);
 			   Char1name.text = "";
                Char1speech.text = "";
                Char2name.text = "Sally";
@@ -192,6 +193,7 @@ public void talking(){         // main story function. Players hit next to progr
        }
 
       else if (primeInt == 200){
+		  mouseback.SetActive(false);
                smilingmouse.SetActive(true);
 			   Char1name.text = "";
                Char1speech.text = "";

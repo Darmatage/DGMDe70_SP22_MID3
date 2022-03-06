@@ -68,7 +68,7 @@ public class Scene4cDialogue : MonoBehaviour
             ArtChar2.SetActive(false);
             DialogueDisplay.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "Let’s see what is here,,,";
+            Char1speech.text = "Let’s see what is here...";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -87,7 +87,7 @@ public class Scene4cDialogue : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             Char1name.text = "YOU";
-            Char1speech.text = "You are seeing what I’m seeing. ";
+            Char1speech.text = "You seeing what I’m seeing. ";
             Char2name.text = "";
             Char2speech.text = "";
         }
