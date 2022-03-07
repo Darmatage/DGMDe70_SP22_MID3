@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene4cDialogue : MonoBehaviour
+public class Scene3aDialogue : MonoBehaviour
 {
     public int primeInt = 1;         // This integer drives game progress!
     public Text Char1name;
@@ -68,7 +68,7 @@ public class Scene4cDialogue : MonoBehaviour
             ArtChar2.SetActive(false);
             DialogueDisplay.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "Let’s see what is here...";
+            Char1speech.text = "The pantry I’m waiting for! ";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -79,7 +79,7 @@ public class Scene4cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Did you see that cheese?";
+            Char2speech.text = "I can smell the coffee, but I don’t see it.";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
@@ -87,7 +87,7 @@ public class Scene4cDialogue : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             Char1name.text = "YOU";
-            Char1speech.text = "You seeing what I’m seeing. ";
+            Char1speech.text = "Sally, when did you get blind?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -98,7 +98,7 @@ public class Scene4cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "You know I like cheese!";
+            Char2speech.text = "Oh shush. I just woke up, Give me a break!";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 6)
@@ -106,7 +106,7 @@ public class Scene4cDialogue : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             Char1name.text = "You";
-            Char1speech.text = "Stating the obvious…";
+            Char1speech.text = "Ah no, your stinky little place needs a window. ";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -117,14 +117,14 @@ public class Scene4cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "I had enough of smelly cheese. ";
+            Char2speech.text = "The window will get fixed soon.";
         }
         else if (primeInt == 8)
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             Char1name.text = "You";
-            Char1speech.text = "I mean if it's a nice piece of gorgonzola, I can live with it. ";
+            Char1speech.text = "You’ve been saying that for weeks.  ";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -135,7 +135,7 @@ public class Scene4cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "STINKY, STINKY. ";
+            Char2speech.text = "Stay focused! We are finding coffee.  ";
         }
 
         else if (primeInt == 10)
@@ -143,7 +143,7 @@ public class Scene4cDialogue : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             Char1name.text = "You";
-            Char1speech.text = "I know you like the mild and sweet kind. ";
+            Char1speech.text = "Where is it?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -156,7 +156,7 @@ public class Scene4cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Exactly! That is right in front of us. ";
+            Char2speech.text = " It’s somewhere. ";
         }
 
         else if (primeInt == 12)
@@ -164,7 +164,7 @@ public class Scene4cDialogue : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             Char1name.text = "You";
-            Char1speech.text = "I’m not sure… What if it is bad?";
+            Char1speech.text = "Not helpful! ";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -176,7 +176,7 @@ public class Scene4cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Oh, come on. The smell is fresh and sweet. Plus the last swiss cheese we had was a year ago. Don’t you have cravings?";
+            Char2speech.text = "The smell is from the shelves. ";
         }
 
         else if (primeInt == 14)
@@ -184,7 +184,7 @@ public class Scene4cDialogue : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             Char1name.text = "You";
-            Char1speech.text = "Ah, I admit it was delicious. ";
+            Char1speech.text = "Hm. Let’s go up and see!";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -193,7 +193,7 @@ public class Scene4cDialogue : MonoBehaviour
             ArtChar1.SetActive(false);
             ArtChar2.SetActive(true);
             Char1name.text = "Sally";
-            Char1speech.text = " What are we waiting for?";
+            Char1speech.text = "Oh, I got it! It’s on the top shelf.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -203,7 +203,7 @@ public class Scene4cDialogue : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             Char1name.text = "You";
-            Char1speech.text = "But we haven’t explored the pantry.  ";
+            Char1speech.text = "Sniffs like roasted coffee beans.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -215,7 +215,7 @@ public class Scene4cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Stop being silly! The pantry won’t have cheese.";
+            Char2speech.text = "Wait… found it! ";
         }
 
         else if (primeInt == 18)
@@ -223,19 +223,9 @@ public class Scene4cDialogue : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             Char1name.text = "You";
-            Char1speech.text = "But the pantry… ";
+            Char1speech.text = "Should we head back and make coffee, OR should we head to the fridge for milk?”";
             Char2name.text = "";
             Char2speech.text = "";
-        }
-
-        else if (primeInt == 19)
-        {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Sally";
-            Char2speech.text = "We can get Swiss cheese right now! And go to the pantry right after.";
 
             // Turn off "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
@@ -249,7 +239,7 @@ public class Scene4cDialogue : MonoBehaviour
         else if (primeInt == 100)
         {
             Char1name.text = "You";
-            Char1speech.text = "Hmmm…something doesn’t seem right.";
+            Char1speech.text = "Will you hurry up?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -258,12 +248,12 @@ public class Scene4cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "What do you mean?";
+            Char2speech.text = "Whom are you speaking with?";
         }
         else if (primeInt == 102)
         {
             Char1name.text = "You";
-            Char1speech.text = "Usually cheese has other crumbs around it.";
+            Char1speech.text = "Do you see anyone else here?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -273,28 +263,58 @@ public class Scene4cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Who cares? Cheese is cheese.";
+            Char2speech.text = " I’m fetching the coffee grinder.";
         }
 
         else if (primeInt == 104)
         {
             Char1name.text = "You";
-            Char1speech.text = " Ah, if it makes you happy…";
+            Char1speech.text = " That’s a good idea. ";
             Char2name.text = "";
             Char2speech.text = "";
-        
+        }
+
+        else if (primeInt == 105)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Sally";
+            Char2speech.text = " You see. I am a clever mouse. ";
+
+        }
+
+        else if (primeInt == 106)
+        {
+            Char1name.text = "You";
+            Char1speech.text = " Ah,fine. You are the smartest mouse in the whole wide world!";
+            Char2name.text = "";
+            Char2speech.text = "";
+
+        }
+
+        else if (primeInt == 107)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Sally";
+            Char2speech.text = "I thought you wanted to make me coffee.";
+        }
+
+        else if (primeInt == 108)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Hm, seems like you are more into it than I am.";
+            Char2name.text = "";
+            Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene1Button.SetActive(true);
         }
-
-        //Debug.Log("prime int " + primeInt);
-        
-       //ENCOUNTER AFTER CHOICE #2
+        //ENCOUNTER AFTER CHOICE #2
         else if (primeInt == 200)
         {
             Char1name.text = "You";
-            Char1speech.text = "I’m excited about the pantry!";
+            Char1speech.text = "Do you like the cold?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -304,13 +324,13 @@ public class Scene4cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Ah, we could have gotten that cheese. ";
+            Char2speech.text = " I’ve been to Antarctica before.";
         }
 
         else if (primeInt == 202)
         {
             Char1name.text = "You";
-            Char1speech.text = "The pantry will have so much more to choose from ";
+            Char1speech.text = "Yeah, right. ";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -320,13 +340,13 @@ public class Scene4cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "But humans don't puch cheese in the pantry.";
+            Char2speech.text = "I will show you pictures when we get back.";
         }
 
         else if (primeInt == 204)
         {
             Char1name.text = "You";
-            Char1speech.text = "I will make it up to you, I promise! ";
+            Char1speech.text = "I don’t see you on the cover of the Mice Times.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -336,8 +356,18 @@ public class Scene4cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Grrr, fine. ";
-            nextButton.SetActive(false);
+            Char2speech.text = " I’m a quiet achiever. ";
+
+        }
+
+        else if (primeInt == 206)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Well, then the fridge would be a piece of cake.";
+            Char2name.text = "";
+            Char2speech.text = "";
+       
+        nextButton.SetActive(false);
             allowSpace = false;
             NextScene2Button.SetActive(true);
         }
@@ -374,11 +404,11 @@ public class Scene4cDialogue : MonoBehaviour
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("EndScene2");
+        SceneManager.LoadScene("Scene4a");
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene3a");
+        SceneManager.LoadScene("Scene4b");
     }
 
 }
