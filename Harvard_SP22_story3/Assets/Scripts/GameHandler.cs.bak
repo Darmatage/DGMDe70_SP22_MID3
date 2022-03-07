@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameHandler : MonoBehaviour
 {
 
-    public static int playerStat = 0;
+    public static bool playerStat = true;
     //public GameObject textGameObject;
 
     //void Start () { UpdateScore (); }
